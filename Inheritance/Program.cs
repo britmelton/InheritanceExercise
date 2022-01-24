@@ -8,32 +8,51 @@ namespace Inheritance
         {
             // TODO Be sure to follow best practice when creating your classes
 
-            // Create a class Animal
-            // give this class 4 members that all Animals have in common
+            Bird babyBird = new Bird() //Create an object of your Bird class
+            {
+                Name = "Songbird",
+                Age = 1,
+                Legs = 2,
+                Sound = "chirp chirp",                  //give values to your members using the object of your Bird class
+                Wings = 2,
+                HasBeak = true,
+                HasClaws = true,
+                CanFly = true,
+                
+
+            };
+            
+            //Creatively display the class member values 
+            
+
+            
 
 
-            // Create a class Bird
-            // give this class 4 members that are specific to Bird
-            // Set this class to inherit from your Animal Class
+            Reptile chameleon = new Reptile() //Create an object of your Reptile class
+            {
+                Name = "Pascal",
+                Age = 5,
+                Legs = 4,
+                Sound = "humpf",                    //give values to your members using the object of your Reptile class
+                Scales = "color changing",
+                ColdBlooded = true,
+                ForkedTounge = false
 
-            // Create a class Reptile
-            // give this class 4 members that are specific to Reptile
-            // Set this class to inherit from your Animal Class
+            };
+            //Creatively display the class member values 
+
+            Console.WriteLine($"My {babyBird.Name}\'s age is {babyBird.Age}. \nIt has {babyBird.Legs} legs and {babyBird.Wings} wings. \nIt is always singing {babyBird.Sound}.");
+
+            Console.WriteLine($"\n{chameleon.Name} is the chameleon from Tangled.\n{chameleon.Name} is {chameleon.Age} years old, he has {chameleon.Legs} legs.\nHe makes a sound like {chameleon.Sound} and has very pretty {chameleon.Scales} scales.");
 
 
 
 
-            /*Create an object of your Bird class
-             *  give values to your members using the object of your Bird class
-             *  
-             * Creatively display the class member values 
-             */
 
-            /*Create an object of your Reptile class
-             *  give values to your members using the object of your Reptile class
-             *  
-             * Creatively display the class member values 
-             */
+
+
+
+
         }
     }
 }
